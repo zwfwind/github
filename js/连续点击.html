@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>连续点击</title>
+</head>
+<body>
+
+<div style="background-color:green;width:170px;height:80px;margin:20px;padding-top:20px;color:#ffffff;font-weight:bold;font-size:18px;float:left;text-align:center; font-family:'微软雅黑';" onclick="clickMeEvent(this)">点击这里</div>
+
+<div style="background-color:green;width:170px;height:80px;margin:20px;padding-top:20px;color:#ffffff;font-weight:bold;font-size:18px;float:left;text-align:center; font-family:'微软雅黑';" onclick="clickMeEvent2(this)">点击这里</div>
+
+<script type="application/javascript">
+	function clickMeEvent(obj){
+		if (obj.innerHTML=="再见"){
+			obj.style.display="none";
+		}
+		else if (obj.innerHTML=="谢谢"){
+			obj.innerHTML="再见";
+		}
+		else if (obj.innerHTML=="点击这里<br>再次点击这里<br>再点一次"){
+			obj.innerHTML="谢谢";
+		}
+		else if (obj.innerHTML=="点击这里<br>再次点击这里"){
+			obj.innerHTML=obj.innerHTML+"<br>再点一次";
+		}
+		else{
+			obj.innerHTML=obj.innerHTML+"<br>再次点击这里";
+		}
+	}
+	
+	function clickMeEvent2(obj){
+		if (obj.innerHTML=="点击这里"){
+			obj.innerHTML=obj.innerHTML+"<br>再次点击这里";
+		}
+		else if (obj.innerHTML=="点击这里<br>再次点击这里"){
+			obj.innerHTML=obj.innerHTML+"<br>再点一次";
+		}
+		else if (obj.innerHTML=="点击这里<br>再次点击这里<br>再点一次"){
+			obj.innerHTML="谢谢";
+		}
+		else if (obj.innerHTML=="谢谢"){
+			obj.innerHTML="再见";
+		}
+		else{
+			obj.style.display="none";
+		}
+	}
+</script>
+</body>
+</html>

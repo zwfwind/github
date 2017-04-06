@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>ClassName</title>
+</head>
+
+<body>
+<div id="main">
+	<p class="p1">The DOM is very useful.</p>
+	<p class="p1">本例演示 <b>getElementsByClassName</b> 方法。</p>
+	<p class="p1"></p>
+	<p class="p1"></p>
+</div>
+
+<script>
+	var x=document.getElementById("main");
+	var y=x.getElementsByClassName("p1");
+	y[2].innerHTML="p1-3";
+	document.getElementById("main").getElementsByClassName("p1")[3].innerHTML="p1-4";
+</script>
+
+</body>
+</html>

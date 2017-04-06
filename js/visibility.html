@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>visibility</title>
+</head>
+
+<body>
+
+<script>
+  function hiddenp(x,y){
+    document.getElementsByClassName(x)[y].style.visibility="hidden";
+  }
+  function visiblep(x,y){
+    document.getElementsByClassName(x)[y].style.visibility="visible";
+  }
+</script>
+
+<p class="p1">这是一段文本。</p>
+
+<input type="button" value="隐藏文本" onclick="hiddenp('p1','0')" />
+<input type="button" value="显示文本" onclick="visiblep('p1','0')" />
+
+</body>
+</html>
