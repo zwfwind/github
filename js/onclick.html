@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>onclick</title>
+</head>
+<body>
+	<input type="button" onclick="alert('onclick demo')" value="onclick">
+	<input type="button" onmouseover="alert('onmouseover demo')" value="onmouseover">
+	<input type="button" onmouseout="alert('onmouseout demo')" value="onmouseout">
+	<input type="button" onclick="sayHello()" value="say Hello">
+	<input type="button" onclick="say('sayFunction')" value="say">
+	<script>
+		function sayHello(){
+			alert("Hello");
+		}
+	</script>
+	<script>
+		function say(x){
+			alert(x);
+		}
+	</script>
+</body>
+</html>

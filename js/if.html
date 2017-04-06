@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>if</title>
+</head>
+
+<body>
+<script>
+	function gettime(){
+		var x;
+		var time=new Date();
+		var hour=new Date().getHours();
+		if (hour<10){
+			x="Good morning";
+		}
+		else if (hour<20){
+			x="Good day";
+		}
+		else{
+			x="Good evening";
+		}
+		document.getElementById("p1").innerHTML= x + "<br>It's " + time + " now";
+	}
+</script>
+
+<input type="button" onclick="gettime()" value="time">
+<P id="p1"></P>
+
+</body>
+</html>
